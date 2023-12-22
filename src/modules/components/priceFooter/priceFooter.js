@@ -19,7 +19,7 @@ export default class PriceFooter extends LightningElement {
         }
     }
 
-    contactUsHandler() {
+    contactUsHandler(e) {
         this.dispatchEvent(new CustomEvent('showmodal'));
     }
 }
