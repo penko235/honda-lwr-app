@@ -123,6 +123,6 @@ export default class BuildAndPrice extends LightningElement {
     }
 
     get description() {
-      return `Customer is looking for CRV ${this.selectedVariant} of color ${this.selectedImgLabel}`;
+      return `Customer is looking for CRV ${this.selectedVariant.variant} of color ${this.selectedImgLabel}`;
     }
 }
