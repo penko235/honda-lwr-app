@@ -119,6 +119,10 @@ export default class BuildAndPrice extends LightningElement {
     }
 
     submitHandler() {
-      
+      this.template.querySelector('components-lead-form').formSubmit();
+    }
+
+    get description() {
+      return `Customer is looking for CRV ${this.selectedVariant} of color ${this.selectedImgLabel}`;
     }
 }
